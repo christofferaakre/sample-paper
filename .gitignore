@@ -1,0 +1,6 @@
+out
+*.bcf
+*.dvi
+*.fls
+*.xml
+*.gz
