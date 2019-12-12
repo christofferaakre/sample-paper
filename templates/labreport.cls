@@ -69,7 +69,7 @@
 
 \floatplacement{figure}{H}
 \floatplacement{table}{H}
-\newcommand{\address}{Department of Physics, Queen Mary, University of London, Mile End Road, 
+\newcommand{\address}{School of Physics and Astronomy, Queen Mary, University of London, Mile End Road, 
 London, E1 4NS, UK.}
 
 \renewcommand{\maketitle}{
