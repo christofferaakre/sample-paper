@@ -157,7 +157,7 @@
 \setcounter{part}{1}
 \renewcommand{\part}{\textbf{\LARGE{Part \thepart}} \addtocounter{part}{1}}
 
-\newcommand{\exercise}{\addtocounter{section}{1} \section*{Exercise \thesection}}
+\newcommand{\exercise}{\addtocounter{section}{1}\setcounter{subsection}{1} \section*{Exercise \thesection}}
 
 \usepackage{parskip}
 \setcounter{subsection}{1}
