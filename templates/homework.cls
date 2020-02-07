@@ -164,12 +164,28 @@
 
 \newbool{long}
 
-\newcommand{\exercisepart}{\ifnum\the\value{subsection}>1 \hfill\\ \fi
- \textbf{(\alph{subsection}}) \addtocounter{subsection}{1}}
-\setcounter{subsubsection}{1}
-
 \newenvironment{subexercises}{
     \begin{enumerate}[\hspace{0.7cm} i]\renewcommand{\labelenumi}{(\theenumi)}
 }{
     \end{enumerate}
 }
+
+\newcommand{\exercisepart}{}
+
+\newcommand{\alphStyle}{
+  \renewcommand{\exercisepart}{
+    \ifnum\the\value{subsection}>1 \hfill\\ \fi
+    \textbf{(\alph{subsection}}) \addtocounter{subsection}{1}
+   \setcounter{subsubsection}{1}
+  }
+}
+
+\newcommand{\romanStyle}{
+  \renewcommand{\exercisepart}{
+    \ifnum\the\value{subsection}>1 \hfill\\ \fi
+    \textbf{(\roman{subsection}}) \addtocounter{subsection}{1}
+   \setcounter{subsubsection}{1}
+  }
+}
+
+\alphStyle
