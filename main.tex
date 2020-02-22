@@ -11,13 +11,18 @@
 \title{Sample Paper}
 \author{Christoffer Aakre}
 
+\newcommand{\dx}{\mathop{dx}}
 \begin{document}
 
-\maketitle
-
-\section{Introduction}
-\cite{inverse-square}
-
-\printbibliography
-
+\section*{\centering Standard integrals}
+\begin{align*}
+    &\int x^n \; \dx = \frac{x^{n + 1}}{n + 1} + C \text{ if $n \neq -1$, reverse power rule} \\
+    &\int \frac{\dx}{x} = \ln \lvert x \rvert + C \\
+    &\int \sin x \; \dx = -\cos x + C \\
+    &\int \cos x \; \dx = \sin x + C \\
+    &\int \tan x \; \dx = \ln \lvert \sec x \rvert + C \\
+    &\int \sec^2 x \; \dx = \tan x + C \\
+    &\int \sec x \tan x \; \dx = \sec x + C \\
+    &\int e^x \; dx = e^x + C \\
+\end{align*}
 \end{document}
