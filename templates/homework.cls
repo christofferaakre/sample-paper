@@ -159,6 +159,8 @@
 
 \newcommand{\exercise}{\addtocounter{section}{1}\setcounter{subsection}{1} \section*{Exercise \thesection}}
 
+\newcommand{\question}[1]{\addtocounter{section}{1}\setcounter{subsection}{1} \section*{#1}}
+
 \usepackage{parskip}
 \setcounter{subsection}{1}
 
@@ -169,6 +171,8 @@
 }{
     \end{enumerate}
 }
+
+
 
 \newcommand{\exercisepart}{}
 
